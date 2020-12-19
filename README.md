@@ -1,2 +1,2 @@
-"# ModemInfo" 
-Modem details listing application." 
+ModemInfo
+Application listing modem details

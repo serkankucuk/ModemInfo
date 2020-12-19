@@ -1,0 +1,561 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".Create">
+
+
+    <TextView
+        android:id="@+id/textView11"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="103dp"
+        android:layout_marginTop="2dp"
+        android:layout_marginBottom="8dp"
+        android:text="Create New Modem"
+        android:textSize="20sp"
+        android:textStyle="bold"
+        app:layout_constraintBottom_toTopOf="@+id/gridLayout"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <androidx.gridlayout.widget.GridLayout
+        android:id="@+id/gridLayout"
+        android:layout_width="409dp"
+        android:layout_height="490dp"
+        android:layout_marginBottom="3dp"
+        app:layout_constraintBottom_toTopOf="@+id/buttonsave"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/textView11">
+
+        <TextView
+            android:id="@+id/textView"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="10dp"
+            android:text="Name"
+            android:textSize="16sp"
+            app:layout_column="0"
+            app:layout_row="0"
+            tools:layout_editor_absoluteX="16dp"
+            tools:layout_editor_absoluteY="77dp" />
+
+        <EditText
+            android:id="@+id/editTextName"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="10dp"
+            android:ems="12"
+            android:focusable="auto"
+            android:inputType="textPersonName"
+            android:textSize="14sp"
+            app:layout_column="1"
+            app:layout_row="0"
+            tools:layout_editor_absoluteX="186dp"
+            tools:layout_editor_absoluteY="57dp"
+            />
+
+        <TextView
+            android:id="@+id/textViewNameContent"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="10dp"
+            android:ems="12"
+            android:text="textViewNameContent"
+            android:textColor="#000000"
+            android:textStyle="bold"
+            app:layout_column="1"
+            app:layout_row="0"
+            tools:layout_editor_absoluteX="64dp"
+            tools:layout_editor_absoluteY="560dp"
+            android:textIsSelectable="true"/>
+
+        <TextView
+            android:id="@+id/textView2"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="10dp"
+            android:text="Modem"
+            android:textSize="16sp"
+            app:layout_column="0"
+            app:layout_row="1"
+            tools:layout_editor_absoluteX="16dp"
+            tools:layout_editor_absoluteY="121dp" />
+
+        <EditText
+            android:id="@+id/editTextModem"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="10dp"
+            android:ems="12"
+            android:inputType="text"
+            android:textSize="14sp"
+            app:layout_column="1"
+            app:layout_row="1"
+            tools:layout_editor_absoluteX="186dp"
+            tools:layout_editor_absoluteY="109dp" />
+        <TextView
+            android:id="@+id/textViewModemContent"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="textViewModemContent"
+            tools:layout_editor_absoluteX="64dp"
+            tools:layout_editor_absoluteY="560dp"
+            android:layout_marginLeft="10dp"
+            android:ems="12"
+            app:layout_column="1"
+            app:layout_row="1"
+            android:textColor="#000000"
+            android:textStyle="bold"
+            android:textIsSelectable="true"
+            />
+
+
+        <TextView
+            android:id="@+id/textViewModemIp"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="10dp"
+            android:text="Modem IP"
+            android:textSize="16sp"
+            app:layout_column="0"
+            app:layout_row="2"
+            tools:layout_editor_absoluteX="16dp"
+            tools:layout_editor_absoluteY="121dp" />
+
+        <EditText
+            android:id="@+id/editTextModemIp"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="10dp"
+            android:digits="0123456789."
+            android:ems="12"
+            android:hint="192.168.1.1"
+            android:inputType="none|number"
+            android:textSize="14sp"
+            app:layout_column="1"
+            app:layout_row="2"
+            tools:layout_editor_absoluteX="186dp"
+            tools:layout_editor_absoluteY="109dp" />
+
+        <TextView
+            android:id="@+id/textViewModemIpContent"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="textViewModemIpContent"
+            tools:layout_editor_absoluteX="64dp"
+            tools:layout_editor_absoluteY="560dp"
+            android:layout_marginLeft="10dp"
+            android:ems="12"
+            app:layout_column="1"
+            app:layout_row="2"
+            android:textColor="#000000"
+            android:textStyle="bold"
+            android:textIsSelectable="true"
+            />
+
+
+        <TextView
+            android:id="@+id/textViewModemAdminName"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="10dp"
+            android:text="Modem Admin Name"
+            android:textSize="16sp"
+            app:layout_column="0"
+            app:layout_row="3"
+            tools:layout_editor_absoluteX="16dp"
+            tools:layout_editor_absoluteY="121dp" />
+
+        <EditText
+            android:id="@+id/editTextModemAdminName"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="10dp"
+            android:ems="12"
+            android:hint="admin"
+            android:inputType="text"
+            android:textSize="14sp"
+            app:layout_column="1"
+            app:layout_row="3"
+            tools:layout_editor_absoluteX="186dp"
+            tools:layout_editor_absoluteY="109dp" />
+
+        <TextView
+            android:id="@+id/textViewModemAdminNameContent"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="ModemAdminNameContent"
+            tools:layout_editor_absoluteX="64dp"
+            tools:layout_editor_absoluteY="560dp"
+            android:layout_marginLeft="10dp"
+            android:ems="12"
+            app:layout_column="1"
+            app:layout_row="3"
+            android:textColor="#000000"
+            android:textStyle="bold"
+            android:textIsSelectable="true"
+            />
+
+
+        <TextView
+            android:id="@+id/textViewModemAdminPassword"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="10dp"
+            android:text="Modem Admin Password"
+            android:textSize="16sp"
+            app:layout_column="0"
+            app:layout_row="4"
+            tools:layout_editor_absoluteX="16dp"
+            tools:layout_editor_absoluteY="121dp" />
+
+        <EditText
+            android:id="@+id/editTextModemAdminPassword"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="10dp"
+            android:ems="12"
+            android:inputType="textVisiblePassword"
+            android:textSize="14sp"
+            app:layout_column="1"
+            app:layout_row="4"
+            tools:layout_editor_absoluteX="186dp"
+            tools:layout_editor_absoluteY="109dp" />
+        <TextView
+            android:id="@+id/textViewModemAdminPasswordContent"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="ModemAdminPasswordCont"
+            tools:layout_editor_absoluteX="64dp"
+            tools:layout_editor_absoluteY="560dp"
+            android:layout_marginLeft="10dp"
+            android:ems="12"
+            app:layout_column="1"
+            app:layout_row="4"
+            android:textColor="#000000"
+            android:textStyle="bold"
+            android:textIsSelectable="true"
+            />
+
+
+
+        <TextView
+            android:id="@+id/textView3"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="10dp"
+            android:text="Company"
+            android:textSize="16sp"
+            app:layout_column="0"
+            app:layout_row="5"
+            tools:layout_editor_absoluteX="16dp"
+            tools:layout_editor_absoluteY="169dp" />
+
+        <EditText
+            android:id="@+id/editTextCompany"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="10dp"
+            android:ems="12"
+            android:inputType="text"
+            android:textSize="14sp"
+            app:layout_column="1"
+            app:layout_row="5"
+            tools:layout_editor_absoluteX="186dp"
+            tools:layout_editor_absoluteY="161dp" />
+
+        <TextView
+            android:id="@+id/textViewCompanyContent"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="textViewCompanyContent"
+            tools:layout_editor_absoluteX="64dp"
+            tools:layout_editor_absoluteY="560dp"
+            android:layout_marginLeft="10dp"
+            android:ems="12"
+            app:layout_column="1"
+            app:layout_row="5"
+            android:textColor="#000000"
+            android:textStyle="bold"
+            android:textIsSelectable="true"
+            />
+
+
+
+        <TextView
+            android:id="@+id/textView10"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="10dp"
+            android:text="Dsl Username"
+            android:textSize="16sp"
+            app:layout_column="0"
+            app:layout_row="6"
+            tools:layout_editor_absoluteX="16dp"
+            tools:layout_editor_absoluteY="223dp" />
+
+        <EditText
+            android:id="@+id/editTextDslUsername"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="10dp"
+            android:ems="12"
+            android:inputType="textWebEmailAddress"
+            android:selectAllOnFocus="false"
+            android:textSize="14sp"
+            app:layout_column="1"
+            app:layout_row="6"
+            tools:layout_editor_absoluteX="186dp"
+            tools:layout_editor_absoluteY="212dp" />
+        <TextView
+            android:id="@+id/textViewDslUsernameContent"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="textViewDslUsernameContent"
+            tools:layout_editor_absoluteX="64dp"
+            tools:layout_editor_absoluteY="560dp"
+            android:layout_marginLeft="10dp"
+            android:ems="12"
+            app:layout_column="1"
+            app:layout_row="6"
+            android:textColor="#000000"
+            android:textStyle="bold"
+            android:textIsSelectable="true"
+            />
+
+        <TextView
+            android:id="@+id/textView5"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="10dp"
+            android:text="Dsl Password"
+            android:textSize="16sp"
+            app:layout_column="0"
+            app:layout_row="7"
+            tools:layout_editor_absoluteX="16dp"
+            tools:layout_editor_absoluteY="279dp" />
+
+        <EditText
+            android:id="@+id/editTextDslPassword"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="10dp"
+            android:ems="12"
+            android:inputType="textVisiblePassword"
+            android:textSize="14sp"
+            app:layout_column="1"
+            app:layout_row="7"
+            tools:layout_editor_absoluteX="186dp"
+            tools:layout_editor_absoluteY="265dp" />
+        <TextView
+            android:id="@+id/textViewDslPasswordContent"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="textViewDslPasswordContent"
+            tools:layout_editor_absoluteX="64dp"
+            tools:layout_editor_absoluteY="560dp"
+            android:layout_marginLeft="10dp"
+            android:ems="12"
+            app:layout_column="1"
+            app:layout_row="7"
+            android:textColor="#000000"
+            android:textStyle="bold"
+            android:textIsSelectable="true"
+            />
+
+        <TextView
+            android:id="@+id/textView6"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="10dp"
+            android:text="Wifi Name"
+            android:textSize="16sp"
+            app:layout_column="0"
+            app:layout_row="8"
+            tools:layout_editor_absoluteX="16dp"
+            tools:layout_editor_absoluteY="331dp" />
+
+        <EditText
+            android:id="@+id/editTextWifiName"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="10dp"
+            android:ems="12"
+            android:inputType="text"
+            android:textSize="14sp"
+            app:layout_column="1"
+            app:layout_row="8"
+            tools:layout_editor_absoluteX="186dp"
+            tools:layout_editor_absoluteY="316dp" />
+        <TextView
+            android:id="@+id/textViewWifiNameContent"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="textViewWifiNameContent"
+            tools:layout_editor_absoluteX="64dp"
+            tools:layout_editor_absoluteY="560dp"
+            android:layout_marginLeft="10dp"
+            android:ems="12"
+            app:layout_column="1"
+            app:layout_row="8"
+            android:textColor="#000000"
+            android:textStyle="bold"
+            android:textIsSelectable="true"
+            />
+
+        <TextView
+            android:id="@+id/textView7"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="10dp"
+            android:text="Wifi Password"
+            android:textSize="16sp"
+            app:layout_column="0"
+            app:layout_row="9"
+            tools:layout_editor_absoluteX="16dp"
+            tools:layout_editor_absoluteY="384dp" />
+
+
+        <EditText
+            android:id="@+id/editTextWifiPassword"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="10dp"
+            android:ems="12"
+            android:inputType="textVisiblePassword"
+            android:textSize="14sp"
+            app:layout_column="1"
+            app:layout_row="9"
+            app:passwordToggleEnabled="true"
+            tools:layout_editor_absoluteX="186dp"
+            tools:layout_editor_absoluteY="377dp" />
+        <TextView
+            android:id="@+id/textViewWifiPasswordContent"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="textViewWifiPasswordContent"
+            tools:layout_editor_absoluteX="64dp"
+            tools:layout_editor_absoluteY="560dp"
+            android:layout_marginLeft="10dp"
+            android:ems="12"
+            app:layout_column="1"
+            app:layout_row="9"
+            android:textColor="#000000"
+            android:textStyle="bold"
+            android:textIsSelectable="true"
+            />
+
+        <TextView
+            android:id="@+id/textView8"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="10dp"
+            android:text="Web Portal Username"
+            android:textSize="16sp"
+            app:layout_column="0"
+            app:layout_row="10"
+            tools:layout_editor_absoluteX="16dp"
+            tools:layout_editor_absoluteY="446dp" />
+
+        <EditText
+            android:id="@+id/editTextWebPortalUsername"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="10dp"
+            android:ems="12"
+            android:inputType="text"
+            android:textSize="14sp"
+            app:layout_column="1"
+            app:layout_row="10"
+            tools:layout_editor_absoluteX="186dp"
+            tools:layout_editor_absoluteY="434dp" />
+        <TextView
+            android:id="@+id/textViewWebPortalUsernameContent"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="WebPortalUsernameContent"
+            tools:layout_editor_absoluteX="64dp"
+            tools:layout_editor_absoluteY="560dp"
+            android:layout_marginLeft="10dp"
+            android:ems="12"
+            app:layout_column="1"
+            app:layout_row="10"
+            android:textColor="#000000"
+            android:textStyle="bold"
+            android:textIsSelectable="true"
+            />
+
+        <TextView
+            android:id="@+id/textView9"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="10dp"
+            android:text="Web Portal Password"
+            android:textSize="16sp"
+            app:layout_column="0"
+            app:layout_row="11"
+            tools:layout_editor_absoluteX="16dp"
+            tools:layout_editor_absoluteY="497dp" />
+
+        <EditText
+            android:id="@+id/editTextWebPortalPassword"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="10dp"
+            android:ems="12"
+            android:inputType="textVisiblePassword"
+            android:selectAllOnFocus="true"
+            android:textSize="14sp"
+            app:layout_column="1"
+            app:layout_row="11"
+            tools:layout_editor_absoluteX="186dp"
+            tools:layout_editor_absoluteY="487dp" />
+        <TextView
+            android:id="@+id/textViewWebPortalPasswordContent"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="WebPortalPasswordContent"
+            tools:layout_editor_absoluteX="64dp"
+            tools:layout_editor_absoluteY="560dp"
+            android:layout_marginLeft="10dp"
+            android:ems="12"
+            app:layout_column="1"
+            app:layout_row="11"
+            android:textColor="#000000"
+            android:textStyle="bold"
+            android:textIsSelectable="true"
+            />
+
+
+    </androidx.gridlayout.widget.GridLayout>
+
+    <Button
+        android:id="@+id/buttonsave"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="1dp"
+        android:onClick="save"
+        android:text="Save"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/gridLayout" />
+    <Button
+        android:id="@+id/buttoneditsave"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="1dp"
+        android:onClick="editsave"
+        android:text="Save"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/gridLayout" />
+
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>

@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string-array name="iss_providers_array">
+            <item>Türk.Net</item>
+            <item>Türk Telekom</item>
+            <item>Süperonline</item>
+            <item>Vodafone</item>
+            <item>D-Smart</item>
+            <item>Millenicom</item>
+            <item>Kablonet</item>
+            <item>Diğer</item>
+
+
+    </string-array>
+
+</resources>

@@ -1,2 +1,2 @@
 "# ModemInfo" 
-"#ModemInfo /br Modem details listing applicatin." 
+Modem details listing application." 
